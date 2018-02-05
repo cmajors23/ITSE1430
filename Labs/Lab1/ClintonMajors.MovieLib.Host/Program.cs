@@ -7,7 +7,9 @@
  * 
  * Lab1
  * 
- * Section 1
+ * I noticed after I finished that you only required the code to deal with a single movie. It was a learning experience though so I hope you dont mind I left the extra code in.
+ * 
+ * 
  */
 
 
@@ -138,13 +140,13 @@ namespace ClintonMajors.MovieLib.Host
 
                     Console.WriteLine(_title[i]);
                     Console.WriteLine(_description[i]);
-                    Console.WriteLine("Run length = " + _length[i] + "mins");
+                    Console.WriteLine("Run length = " + _length[i] + " mins");
                     if (_owned[i] == true)
                     {
-                        Console.WriteLine("Status = Owned");
+                        Console.WriteLine("Status = Owned\n");
                     }else
                     {
-                        Console.WriteLine("Status = Not Owned");
+                        Console.WriteLine("Status = Not Owned\n");
                     }
                     
                 }
@@ -200,7 +202,6 @@ namespace ClintonMajors.MovieLib.Host
         private static char DisplayMenu()
         {
 
-
             do
 
             {
@@ -215,16 +216,12 @@ namespace ClintonMajors.MovieLib.Host
                 Console.WriteLine("Q)uit\n");
 
 
-
                 string input = Console.ReadLine();
-
 
 
                 //Remove whitespace
 
                 input = input.Trim();
-
-                //input.ToLower();
 
                 input = input.ToUpper();
 
@@ -240,15 +237,12 @@ namespace ClintonMajors.MovieLib.Host
 
                  else if (input == "R")
                 
-
                     return input[0];
 
                  else if (input == "Q")
-                
 
                     return input[0];
                 
-
 
                     Console.WriteLine("Please choose a valid option");
                 
@@ -266,11 +260,7 @@ namespace ClintonMajors.MovieLib.Host
 
                 Console.Write(message);
 
-
-
                 string value = Console.ReadLine();
-
-
 
                 //If not required or not empty
 
@@ -296,17 +286,10 @@ namespace ClintonMajors.MovieLib.Host
 
                 Console.Write(message);
 
-
-
                 string value = Console.ReadLine();
 
 
-
                 //if (Decimal.TryParse(value, out decimal result) && result >= minValue)
-
-                //    return result;
-
-
 
                 if (Decimal.TryParse(value, out decimal result))
 
@@ -320,9 +303,6 @@ namespace ClintonMajors.MovieLib.Host
 
                 };
 
-
-
-                //Formatting strings
 
                 //Console.WriteLine("Value must be >= {0}", minValue);
 
