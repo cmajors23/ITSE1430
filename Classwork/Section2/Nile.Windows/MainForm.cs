@@ -21,16 +21,27 @@ namespace Nile.Windows
         {
             base.OnLoad(e);
 
-            var name = product.GetName();
+            var product = new Product();
+
+            Decimal.TryParse("123", out decimal price);
+            product.Name = "Product A";
+            product.Price = 50;
+            product.IsDiscontinued = true;
+
+            var price2 = product.ActualPrice;
+            
+
+            var name = product.Name;
+            //var name = product.GetName();
             //var product = new Product();
-            product.SetName("Product A");
+            //product.SetName("Product A");
             // product.Description = "None";
-            var error = product.Validate();
+           // var error = product.Validate();
 
             var str = product.ToString();
 
             var productB = new Product();
-            productB.SetName("Product B");
+            //productB.SetName("Product B");
             // productB.Description = product.Description;
 
         }
