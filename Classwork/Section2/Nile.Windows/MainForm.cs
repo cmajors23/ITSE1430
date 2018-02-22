@@ -74,7 +74,7 @@ namespace Nile.Windows
         {
             var button = sender as ToolStripMenuItem;
             var form = new ProductDetailForm();
-            form.Text = "Add Product";
+            //form.Text = "Add Product";
 
             //Show form modally
             var result = form.ShowDialog(this);
@@ -92,7 +92,7 @@ namespace Nile.Windows
                 return;
             var form = new ProductDetailForm();
             form.Text = "Add Product";
-            form.Product = _product; 
+            //form.Product = _product; 
 
             //Show form modally
             var result = form.ShowDialog(this);
