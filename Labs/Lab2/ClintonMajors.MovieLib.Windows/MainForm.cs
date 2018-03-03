@@ -32,8 +32,11 @@ namespace ClintonMajors.MovieLib.Windows
 
         private void OnMovieEdit(object sender, EventArgs e)
         {
-           if ( _movie == null )
-               return;
+            if (_movie == null)
+            {
+                DisplayError("There are no movies to edit");
+                return;
+            }
 
             var form = new MovieDetailForm(_movie);
             var result = form.ShowDialog(this);
@@ -72,6 +75,12 @@ namespace ClintonMajors.MovieLib.Windows
         {
 
         }
+        private void DisplayError(string message)
+        {
+            MessageBox.Show(this, message, "Error", MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
 
