@@ -1,0 +1,6 @@
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib\bin\Debug\ClintonMajors.MovieLib.dll
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib\bin\Debug\ClintonMajors.MovieLib.pdb
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib\obj\Debug\ClintonMajors.MovieLib.csproj.CoreCompileInputs.cache
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib\obj\Debug\ClintonMajors.MovieLib.dll
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib\obj\Debug\ClintonMajors.MovieLib.pdb
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib\obj\Debug\ClintonMajors.MovieLib.csprojResolveAssemblyReference.cache

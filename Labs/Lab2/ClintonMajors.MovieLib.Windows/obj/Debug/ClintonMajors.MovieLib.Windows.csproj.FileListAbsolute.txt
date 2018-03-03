@@ -1,0 +1,14 @@
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\bin\Debug\ClintonMajors.MovieLib.Windows.exe.config
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\bin\Debug\ClintonMajors.MovieLib.Windows.exe
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\bin\Debug\ClintonMajors.MovieLib.Windows.pdb
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\obj\Debug\ClintonMajors.MovieLib.Windows.csprojResolveAssemblyReference.cache
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\obj\Debug\ClintonMajors.MovieLib.Windows.Properties.Resources.resources
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\obj\Debug\ClintonMajors.MovieLib.Windows.csproj.GenerateResource.Cache
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\obj\Debug\ClintonMajors.MovieLib.Windows.csproj.CoreCompileInputs.cache
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\obj\Debug\ClintonMajors.MovieLib.Windows.exe
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\obj\Debug\ClintonMajors.MovieLib.Windows.pdb
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\bin\Debug\ClintonMajors.MovieLib.dll
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\bin\Debug\ClintonMajors.MovieLib.pdb
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\obj\Debug\ClintonMajors.MovieLib.Windows.MainForm.resources
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\obj\Debug\ClintonMajors.MovieLib.Windows.AboutBox1.resources
+C:\Users\Clinton Majors\source\repos\Lab2\ClintonMajors.MovieLib.Windows\obj\Debug\ClintonMajors.MovieLib.Windows.MovieDetailForm.resources
