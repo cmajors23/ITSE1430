@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
 using Nile.Data;
+using Nile.Data.IO;
 using Nile.Data.Memory;
 
 namespace Nile.Windows
@@ -22,6 +23,8 @@ namespace Nile.Windows
         protected override void OnLoad( EventArgs e )
         {
             base.OnLoad(e);
+
+            _database = new FileProductDatabase("products.csv");
 
             RefreshUI();
         }
@@ -73,15 +76,19 @@ namespace Nile.Windows
                 return;
 
             //Add to database
-            _database.Add(form.Product, out var message);
-            if (!String.IsNullOrEmpty(message))
-                MessageBox.Show(message);
+            //_database.Add(form.Product);
+            try
+            {
+                _database.Add(null);
+            } catch (NotImplementedException)
+            {
+                MessageBox.Show("not implemented yet");
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            };
 
             RefreshUI();
-            //Find empty array element
-            //var index = FindEmptyProductIndex();
-            //if (index >= 0)
-            //_products[index] = form.Product;                    
         }
 
         private void OnProductEdit( object sender, EventArgs e )
@@ -95,7 +102,7 @@ namespace Nile.Windows
                 return;
             };
 
-            EditProduct(product);
+            EditProduct(product);            
         }
 
         private void OnProductRemove( object sender, EventArgs e )
@@ -127,7 +134,13 @@ namespace Nile.Windows
                 return;
 
             //Remove product
-            _database.Remove(product.Id);
+            try
+            {
+                _database.Remove(product.Id);
+            } catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            };
 
             RefreshUI();
         }
@@ -142,16 +155,20 @@ namespace Nile.Windows
 
             //Update the product
             form.Product.Id = product.Id;
-            _database.Update(form.Product, out var message);
-            if (!String.IsNullOrEmpty(message))
-                MessageBox.Show(message);
+
+            try
+            {
+                _database.Update(form.Product);
+            } catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            };
 
             RefreshUI();
         }
 
         private Product GetSelectedProduct ( )
         {
-            //TODO: Use the binding source
             //Get the first selected row in the grid, if any
             if (dataGridView1.SelectedRows.Count > 0)
                 return dataGridView1.SelectedRows[0].DataBoundItem as Product;
@@ -162,14 +179,17 @@ namespace Nile.Windows
         private void RefreshUI ()
         {
             //Get products
-            var products = _database.GetAll();
-            //products[0].Name = "Product A";
+            IEnumerable<Product> products = null;
+            try
+            {
+              products = _database.GetAll();
 
-            //Bind to grid
-            //productBindingSource.DataSource = new List<Product>(products);
-            //productBindingSource.DataSource = Enumerable.ToList(products);
-            productBindingSource.DataSource = products.ToList();
-            //dataGridView1.DataSource 
+            }catch (Exception)
+            {
+                MessageBox.Show("Error loading products");
+            };
+
+            productBindingSource.DataSource = products?.ToList();
         }
 
         private bool ShowConfirmation ( string message, string title )
@@ -179,7 +199,7 @@ namespace Nile.Windows
                            == DialogResult.Yes;
         }
 
-        private IProductDatabase _database = new MemoryProductDatabase();
+        private IProductDatabase _database;
 
         #endregion
     }

@@ -65,7 +65,8 @@ namespace Nile.Windows
             };
 
             //Validate product using IValidatableObject
-            var errors = ObjectValidator.Validate(product);
+            //ar errors = ObjectValidator.Validate(source: product);
+         // var errors = ObjectValidator.Validate(product);
             if (errors.Count() > 0)
             {
                 //Get first error

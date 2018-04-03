@@ -3,61 +3,12 @@
  */
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
 
 namespace Nile.Data.Memory
 {
     /// <summary>Provides an in-memory product database.</summary>
     public class MemoryProductDatabase : ProductDatabase
-    {
-        ///// <summary>Initializes an instance of the <see cref="MemoryProductDatabase"/> class.</summary>
-        //public MemoryProductDatabase()
-        //{
-        //    //Array version
-        //    //var prods = new Product[]
-        //    //var prods = new []
-        //    //    {
-        //    //        new Product(),
-        //    //        new Product()
-        //    //    };
-
-        //    //_products = new Product[25];
-        //    _products = new List<Product>() 
-        //    {
-        //        new Product() { Id = _nextId++, Name = "iPhone X",
-        //                        IsDiscontinued = true, Price = 1500, },
-        //        new Product() { Id = _nextId++, Name = "Windows Phone",
-        //                        IsDiscontinued = true, Price = 15, },
-        //        new Product() { Id = _nextId++, Name = "Samsung S8",
-        //                        IsDiscontinued = false, Price = 800 }
-        //    };
-
-        //    //var product = new Product() {
-        //    //    Id = _nextId++,
-        //    //    Name = "iPhone X",
-        //    //    IsDiscontinued = true,
-        //    //    Price = 1500,
-        //    //};
-        //    //_products.Add(product);
-
-        //    //product = new Product() {
-        //    //    Id = _nextId++,
-        //    //    Name = "Windows Phone",
-        //    //    IsDiscontinued = true,
-        //    //    Price = 15,
-        //    //};
-        //    //_products.Add(product);
-
-        //    //product = new Product {
-        //    //    Id = _nextId++,
-        //    //    Name = "Samsung S8",
-        //    //    IsDiscontinued = false,
-        //    //    Price = 800
-        //    //};
-        //    //_products.Add(product);
-        //}
-        
+    {                
         protected override Product AddCore ( Product product )
         {
             // Clone the object
@@ -102,10 +53,8 @@ namespace Nile.Data.Memory
             var existing = GetCore(product.Id);
 
             // Clone the object
-            //_products[existingIndex] = Clone(product);
             Copy(existing, product);
 
-            //Return a copy
             return product;
         }
 
@@ -113,7 +62,6 @@ namespace Nile.Data.Memory
         {
             foreach (var product in _products)
             {
-                //product.Name.CompareTo
                 if (String.Compare(product.Name, name, true) == 0)
                     return product;
             };
@@ -141,20 +89,7 @@ namespace Nile.Data.Memory
             target.Price = source.Price;
             target.IsDiscontinued = source.IsDiscontinued;
         }
-
-        //private int FindEmptyProductIndex()
-        //{
-        //    for (var index = 0; index < _products.Length; ++index)
-        //    {
-        //        if (_products[index] == null)
-        //            return index;
-        //    };
-
-        //    return -1;
-        //}
-
-        //Find a product by its ID
-                
+                        
         private readonly List<Product> _products = new List<Product>();
         private int _nextId = 1;
 
