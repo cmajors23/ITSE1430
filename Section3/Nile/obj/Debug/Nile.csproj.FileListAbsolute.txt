@@ -1,0 +1,6 @@
+C:\Users\clinton.majors\Source\Repos\ITSE1430\Classwork\Section2\Nile\bin\Debug\Nile.dll
+C:\Users\clinton.majors\Source\Repos\ITSE1430\Classwork\Section2\Nile\bin\Debug\Nile.pdb
+C:\Users\clinton.majors\Source\Repos\ITSE1430\Classwork\Section2\Nile\obj\Debug\Nile.csprojResolveAssemblyReference.cache
+C:\Users\clinton.majors\Source\Repos\ITSE1430\Classwork\Section2\Nile\obj\Debug\Nile.csproj.CoreCompileInputs.cache
+C:\Users\clinton.majors\Source\Repos\ITSE1430\Classwork\Section2\Nile\obj\Debug\Nile.dll
+C:\Users\clinton.majors\Source\Repos\ITSE1430\Classwork\Section2\Nile\obj\Debug\Nile.pdb

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClintonMajors.MovieLib.Windows", "ClintonMajors.MovieLib.Windows\ClintonMajors.MovieLib.Windows.csproj", "{CCB7A6D0-ADD6-497E-B53E-1737485B5261}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClintonMajors.MovieLib", "ClintonMajors.MovieLib\ClintonMajors.MovieLib.csproj", "{96E477A7-C335-4ABA-918B-0094ABC07999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClintonMajors.MovieLib.Data.Memory", "ClintonMajors.MovieLib.Data.Memory\ClintonMajors.MovieLib.Data.Memory.csproj", "{C67E70EE-A932-4E65-83E6-12184C71A6CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCB7A6D0-ADD6-497E-B53E-1737485B5261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB7A6D0-ADD6-497E-B53E-1737485B5261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB7A6D0-ADD6-497E-B53E-1737485B5261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB7A6D0-ADD6-497E-B53E-1737485B5261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E477A7-C335-4ABA-918B-0094ABC07999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E477A7-C335-4ABA-918B-0094ABC07999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E477A7-C335-4ABA-918B-0094ABC07999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E477A7-C335-4ABA-918B-0094ABC07999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67E70EE-A932-4E65-83E6-12184C71A6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67E70EE-A932-4E65-83E6-12184C71A6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67E70EE-A932-4E65-83E6-12184C71A6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67E70EE-A932-4E65-83E6-12184C71A6CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D90679A-1E6C-4B81-9A6A-D1C79ACFEC62}
+	EndGlobalSection
+EndGlobal
