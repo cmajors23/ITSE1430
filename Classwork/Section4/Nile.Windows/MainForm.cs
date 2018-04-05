@@ -166,15 +166,34 @@ namespace Nile.Windows
 
             RefreshUI();
         }
-
+    //    private sealed class SelectedRowType
+     //   {
+      //      public int Index { get; set; }
+       //     public Product Product { get; set; }
+       // }
         private Product GetSelectedProduct ( )
         {
-            //Get the first selected row in the grid, if any
-            if (dataGridView1.SelectedRows.Count > 0)
-                return dataGridView1.SelectedRows[0].DataBoundItem as Product;
+            //demoing something new
+          //  var items = (from r in dataGridView1.SelectedRows.OfType<DataGridViewRow>()
+          //          select new SelectedRowType(){
+          //              Index = r.Index,
+          //              Product = r.DataBoundItem as Product
+          //          }).FirstOrDefault();
 
-            return null;
-        }
+        var items = (from r in dataGridView1.SelectedRows.OfType<DataGridViewRow>()
+                     select new {
+                         Index = r.Index,
+                         Product = r.DataBoundItem as Product
+                     }).FirstOrDefault();
+
+        return items.Product;
+
+        //Get the first selected row in the grid, if any
+        //if (dataGridView1.SelectedRows.Count > 0)
+        //  return dataGridView1.SelectedRows[0].DataBoundItem as Product;
+
+        //return null;
+    }
 
         private void RefreshUI ()
         {
