@@ -1,0 +1,5 @@
+C:\Users\clinton.majors\Downloads\Final\MovieDatabase\bin\Debug\MovieDatabase.dacpac
+C:\Users\clinton.majors\Downloads\Final\MovieDatabase\bin\Debug\MovieDatabase.dll
+C:\Users\clinton.majors\Downloads\Final\MovieDatabase\bin\Debug\MovieDatabase.pdb
+C:\Users\clinton.majors\Downloads\Final\MovieDatabase\obj\Debug\MovieDatabase.dll
+C:\Users\clinton.majors\Downloads\Final\MovieDatabase\obj\Debug\MovieDatabase.pdb
