@@ -1,0 +1,8 @@
+C:\Users\clinton.majors\Downloads\Final\MovieLib.Data.Sql\bin\Debug\MovieLib.Data.Sql.dll
+C:\Users\clinton.majors\Downloads\Final\MovieLib.Data.Sql\bin\Debug\MovieLib.Data.Sql.pdb
+C:\Users\clinton.majors\Downloads\Final\MovieLib.Data.Sql\bin\Debug\MovieLib.dll
+C:\Users\clinton.majors\Downloads\Final\MovieLib.Data.Sql\bin\Debug\MovieLib.pdb
+C:\Users\clinton.majors\Downloads\Final\MovieLib.Data.Sql\obj\Debug\MovieLib.Data.Sql.csprojResolveAssemblyReference.cache
+C:\Users\clinton.majors\Downloads\Final\MovieLib.Data.Sql\obj\Debug\MovieLib.Data.Sql.csproj.CoreCompileInputs.cache
+C:\Users\clinton.majors\Downloads\Final\MovieLib.Data.Sql\obj\Debug\MovieLib.Data.Sql.dll
+C:\Users\clinton.majors\Downloads\Final\MovieLib.Data.Sql\obj\Debug\MovieLib.Data.Sql.pdb

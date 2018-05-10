@@ -27,7 +27,8 @@ namespace MovieLib.Data.Sql
         /// <summary>Adds a movie.</summary>
         /// <param name="movie">The movie to add.</param>
         /// <returns>The added movie.</returns>
-        protected Movie AddCore ( Movie movie )
+        /// /CR Clinton Majors override added
+        protected override Movie  AddCore ( Movie movie )
         {
             using (var conn = new SqlConnection(_connectionString))
             {
