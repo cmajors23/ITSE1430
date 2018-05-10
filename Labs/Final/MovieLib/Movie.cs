@@ -31,6 +31,7 @@ namespace MovieLib
         public Rating Rating { get; set; }
 
         public int ReleaseYear { get; set; }
+     
 
         /// <summary>Gets or sets the title.</summary>
         public string Title
@@ -44,6 +45,10 @@ namespace MovieLib
         /// <returns>The validation results.</returns>
         public IEnumerable<ValidationResult> Validate ( ValidationContext validationContext )
         {
+            //CR Clinton Majors added check for release year range
+            //Release Year must be after 1900 and before 2100
+            if (ReleaseYear < 1900 || ReleaseYear > 2100)
+                yield return new ValidationResult("Release Year must be after 1900 and before 2100", new[] { "ReleaseYear" });
             //Title is required
             if (Title.Length == 0)
                 yield return new ValidationResult("Title is required.", new[] { "Title" });

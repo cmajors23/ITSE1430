@@ -1,0 +1,6 @@
+C:\Users\clinton.majors\Downloads\Final\MovieLib\bin\Debug\MovieLib.dll
+C:\Users\clinton.majors\Downloads\Final\MovieLib\bin\Debug\MovieLib.pdb
+C:\Users\clinton.majors\Downloads\Final\MovieLib\obj\Debug\MovieLib.csprojResolveAssemblyReference.cache
+C:\Users\clinton.majors\Downloads\Final\MovieLib\obj\Debug\MovieLib.csproj.CoreCompileInputs.cache
+C:\Users\clinton.majors\Downloads\Final\MovieLib\obj\Debug\MovieLib.dll
+C:\Users\clinton.majors\Downloads\Final\MovieLib\obj\Debug\MovieLib.pdb
